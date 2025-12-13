@@ -1,0 +1,4 @@
+numpy>=1.21
+mavsdk>=1.4.0
+ruckig>=0.12.2
+anyio>=3.6
