@@ -46,7 +46,7 @@ Both scripts accept optional command-line arguments (e.g., timestep, velocity li
 
 ## Running the Trajectory in Simulation
 
-Start the PX4 SITL and simulator (jMAVSim or Gazebo) and wait for `pxh` to indicate the vehicle is ready to arm. This setup assumes no GCS is connected; the commander health check can be overridden by running `param set NAV_DLL_ACT 0` in the `pxh` console. Once the vehicle is healthy, run the trajectory follower from a separate terminal:
+Start the PX4 SITL and simulator (jMAVSim or Gazebo) and wait for `pxh` to indicate the vehicle is ready to arm. It is recommended to use jMAVSim as it is more lightweight. This setup assumes no GCS is connected; the commander health check can be overridden by running `param set NAV_DLL_ACT 0` in the `pxh` console. Once the vehicle is healthy, run the trajectory follower from a separate terminal:
 ```
 python3 traj_flyer/run_traj.py data/traj.csv
 ```
